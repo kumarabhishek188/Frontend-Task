@@ -1,0 +1,229 @@
+.home-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+
+.home-image-container {
+  margin-bottom: 30px;
+}
+
+.home-hero-image {
+  width: 90%;
+  height: auto;
+  max-height: 500px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-hero-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section h1 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+.hero-section p {
+  font-size: 1.3em;
+  color: #666;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.welcome-message {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 30px;
+  display: inline-block;
+  min-width: 300px;
+}
+
+.welcome-message h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.4em;
+}
+
+.welcome-message p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1em;
+}
+
+.featured-users-section {
+  margin-bottom: 50px;
+}
+
+.featured-users-section h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+}
+
+.featured-users-section p {
+  text-align: center;
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.users-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.stats-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stat-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
+}
+
+.stat-card h3 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+.stat-card p {
+  color: #666;
+  font-size: 1.1em;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-page {
+    padding: 15px;
+  }
+
+  .hero-section {
+    padding: 40px 20px;
+  }
+
+  .home-hero-image {
+    width: 100%;
+    max-height: 350px;
+  }
+
+  .hero-section h1 {
+    font-size: 2.5em;
+  }
+
+  .hero-section p {
+    font-size: 1.1em;
+  }
+
+  .welcome-message {
+    min-width: auto;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .users-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .stats-section {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .featured-users-section h2 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section h1 {
+    font-size: 2em;
+  }
+
+  .hero-section p {
+    font-size: 1em;
+  }
+
+  .home-hero-image {
+    max-height: 250px;
+  }
+
+  .welcome-message h3 {
+    font-size: 1.2em;
+  }
+
+  .stat-card {
+    padding: 25px 20px;
+  }
+
+  .stat-card h3 {
+    font-size: 2em;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .hero-section,
+  .stat-card {
+    background: rgba(26, 26, 26, 0.9);
+    border-color: #333;
+  }
+
+  .hero-section p,
+  .featured-users-section p,
+  .stat-card p {
+    color: #ccc;
+  }
+
+  .current-user-section h2 {
+    color: white;
+  }
+}
