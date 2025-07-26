@@ -1,4 +1,4 @@
-# Simpler Technology Frontend
+# Simpler Technology
 
 A modern React + Vite web application for Simpler Technology, featuring user authentication, community features, and a responsive UI.
 
@@ -14,8 +14,6 @@ A modern React + Vite web application for Simpler Technology, featuring user aut
 - **User Cards**: Reusable user card component for displaying users and team members.
 - **Footer**: Quick links, contact info, and social media integration.
 - **Modern UI**: Clean, responsive design with custom CSS.
-- **Vite + React**: Fast development, HMR, and optimized build.
-- **ESLint**: Code linting for consistent code quality.
 
 ---
 
@@ -33,11 +31,6 @@ A modern React + Vite web application for Simpler Technology, featuring user aut
    ```bash
    npm run build
    ```
-4. **Preview production build:**
-   ```bash
-   npm run preview
-   ```
-
 ---
 
 ## 🌐 Deployment
@@ -46,7 +39,20 @@ Here is deploy link:
 
 <!-- Add your deployed site URL below -->
 
-[https://your-deployment-url.com](https://your-deployment-url.com)
+[https://simpler-technology.netlify.app/](https://simpler-technology.netlify.app/)
+
+
+## 🚀 Demo Video
+Here is deploy link:
+
+▶️ [Watch the demo video](https://drive.google.com/file/d/1ImMbMwYrFkXnif1D1BPlyV2QR5bLdUVl/view?usp=drive_link)
+
+## 🧪 Test Credentials
+You can skip signup and use the test credentials below:
+
+Email: abhi@gmail.com
+
+Password: Abhi@123
 
 ---
 
@@ -81,15 +87,3 @@ frontend-tasks/
 - `UserCard` - Reusable user display card
 
 ---
-
-## 📦 Dependencies
-
-- React 19+
-- Vite
-- ESLint
-
----
-
-## 📄 License
-
-MIT
